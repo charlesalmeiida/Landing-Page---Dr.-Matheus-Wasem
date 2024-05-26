@@ -231,3 +231,133 @@
     }
   }
 }
+
+.s-bonus {
+  padding-bottom: 11.2rem;
+  .container {
+    position: relative;
+    span.tag {
+      text-align: center;
+    }
+    img {
+      margin: 0 auto;
+      margin-top: -52px;
+      max-width: 539px;
+    }
+    .bonus {
+      max-width: 32rem;
+      position: absolute;
+      &.left {
+        top: 20rem;
+      }
+      &.bottom {
+        bottom: -14.5rem;
+        left: 44.8rem;
+        max-width: 33rem;
+      }
+      &.right {
+        right: 4.5rem;
+        top: 27.3rem;
+      }
+      strong {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 120%;
+        display: block;
+        margin-bottom: 2.4rem;
+      }
+      p {
+        font-size: 2rem;
+        line-height: 120%;
+      }
+    }
+  }
+}
+
+.s-garantia {
+  padding: 11.2rem 0;
+  .container {
+    background-color: $primary-orange;
+    border-radius: 1rem;
+    padding: 5.4rem 0 6.2rem;
+    h2 {
+      text-overflow: ellipsis;
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 54px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 3.2rem;
+    }
+    p {
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      max-width: 87rem;
+      margin: 0 auto;
+    }
+    a {
+      margin: 52px auto 0;
+    }
+  }
+}
+
+.s-faq {
+  padding-bottom: 11.2rem;
+  .text {
+    text-align: center;
+    margin-top: -3.1rem;
+  }
+  .faq {
+    margin-top: 6.2rem;
+    .item-faq {
+      @include flex(column, center, center);
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+      button {
+        color: $gray-01;
+        font-weight: 600;
+        line-height: 1.92rem;
+        font-size: 1.6rem;
+        padding: 2.2rem 3.2rem 2.2rem 2.4rem;
+        background-color: $gray-05;
+        width: 100%;
+        max-width: 86.4rem;
+        @include flexSpaceBetween;
+        img {
+          max-width: 2.3rem;
+          transition: all 0.3s;
+        }
+      }
+      p {
+        background-color: $gray-05;
+        max-width: 91.8rem;
+        padding: 1.6rem 2.4rem;
+        border-top: 1px solid hsla(210, 14%, 89%, 0.6);
+        display: none;
+        animation: fadeIn 0.3s forwards;
+      }
+      &.active {
+        p {
+          display: block;
+        }
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
