@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 1000,
+  once: true,
+})
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3.7,
   spaceBetween: 24,

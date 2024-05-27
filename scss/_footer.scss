@@ -1,0 +1,25 @@
+footer {
+  padding: 8rem 0 1.2rem;
+  background-color: $primary-blue;
+  .container {
+    margin-bottom: 4.7rem;
+    @include flexSpaceBetween;
+    span {
+      color: $gray-06;
+      font-size: 16px;
+      line-height: 1.92rem;
+    }
+  }
+  span {
+    color: $gray-06;
+    font-size: 1.4rem;
+    line-height: 1.92rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    a {
+      color: $gray-06;
+      text-decoration: underline;
+    }
+  }
+}

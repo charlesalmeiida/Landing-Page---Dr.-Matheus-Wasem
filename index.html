@@ -15,12 +15,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <main>
       <section class="s-hero">
         <div class="container">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <a href="#" class="logo"
               ><img src="./assets/svg/logo.svg" alt="Logo Dr. Matheus Wasem"
             /></a>
@@ -38,7 +39,7 @@
               >👉<span>QUERO GARANTIR A MINHA VAGA</span></a
             >
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <img
               src="./assets/img/image-hero.png"
               alt="Foto Dr. Matheus Wasem"
@@ -49,7 +50,7 @@
     </main>
     <section class="s-video">
       <div class="container">
-        <div class="top">
+        <div class="top" data-aos="fade-up">
           <div class="left">
             <span class="tag">MÉTODO WASEM</span>
             <h3>Neste Vídeo, Você Vai Aprender Como o Método Wasem Pode:</h3>
@@ -119,6 +120,7 @@
         <div class="bottom">
           <iframe
             class="video-vendas"
+            data-aos="fade-up"
             width="655"
             height="370"
             src="https://www.youtube.com/embed/jzKoBYU3kdo?si=Vd9cgY0w-o7OR5cL"
@@ -136,7 +138,7 @@
     </section>
     <section class="s-sobre">
       <div class="container">
-        <div class="left">
+        <div class="left" data-aos="fade-right">
           <span class="tag">SOBRE O DOUTOR</span>
           <h2>Conheça o Dr. Matheus Wasem</h2>
           <div class="text-sobre">
@@ -164,7 +166,7 @@
             </p>
           </div>
         </div>
-        <div class="right">
+        <div class="right" data-aos="fade-left">
           <img
             src="./assets/img/image-about.png"
             alt="Foto do Dr. Matheus Wasem"
@@ -207,7 +209,7 @@
             </div>
           </div>
         </div>
-        <div class="dots">
+        <div class="dots" data-aos="fade-down">
           <img src="./assets/svg/dots.svg" alt="" />
         </div>
         <div class="right">
@@ -247,7 +249,7 @@
     <section class="s-depoimentos">
       <div class="container">
         <h2>O que dizem nossos alunos</h2>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" data-aos="fade-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <iframe
@@ -329,7 +331,7 @@
     <section class="s-entregaveis">
       <div class="container">
         <div class="top">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <span class="tag">ENTREGÁVEIS</span>
             <p>
               Ao se inscrever no curso
@@ -352,7 +354,7 @@
             </div>
           </div>
         </div>
-        <div class="bottom">
+        <div class="bottom" data-aos="fade-up">
           <div class="swiper-entregavel">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -477,21 +479,21 @@
           src="./assets/img/image-bonuts.png"
           alt="Foto do Dr. Matheus Wasem na seção de bonús do curso"
         />
-        <div class="bonus left">
+        <div class="bonus left" data-aos="fade-up" data-aos-duration="800">
           <p>
             <strong>Critérios de McDonald</strong>
             Saiba como a esclerose múltipla é diagnosticada de acordo com os
             critérios mais atualizados.
           </p>
         </div>
-        <div class="bonus bottom">
+        <div class="bonus bottom" data-aos="fade-up" data-aos-duration="1200">
           <p>
             <strong>EDSS</strong>
             Aprenda a calcular o nível de gravidade da sua esclerose múltipla
             usando a Escala Expandida do Estado de Incapacidade.
           </p>
         </div>
-        <div class="bonus right">
+        <div class="bonus right" data-aos="fade-up" data-aos-duration="1000">
           <p>
             <strong>Vacinas e Esclerose Múltipla</strong>
             Informações detalhadas sobre quais vacinas são seguras para
@@ -501,7 +503,7 @@
       </div>
     </section>
     <section class="s-garantia">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <h2>garantia incondicional</h2>
         <p>
           Ao se inscrever no curso "Esclerose Múltipla: Tudo o que você precisa
@@ -516,7 +518,7 @@
       </div>
     </section>
     <section class="s-faq">
-      <div class="container">
+      <div class="container" data-aos="zoom-up">
         <div class="text">
           <span class="tag">FAQ</span>
           <h2>Dúvidas Frequentes</h2>
@@ -604,7 +606,26 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="left">
+          <img src="./assets/svg/logo.svg" alt="logo Dr. Matheus Wasem" />
+        </div>
+        <div class="right">
+          <span
+            >Copyright © 2024 - Dr. Matheus Wasem. Todos os direitos reservados.
+          </span>
+        </div>
+      </div>
+      <span
+        >Feito com 🩷 por
+        <a href="https://www.instagram.com/flidmarketing/"
+          >Flid Marketing</a
+        ></span
+      >
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

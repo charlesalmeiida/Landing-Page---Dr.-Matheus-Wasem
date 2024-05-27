@@ -318,6 +318,7 @@
       }
       button {
         color: $gray-01;
+        border-radius: 1rem;
         font-weight: 600;
         line-height: 1.92rem;
         font-size: 1.6rem;
@@ -325,6 +326,10 @@
         background-color: $gray-05;
         width: 100%;
         max-width: 86.4rem;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: hsla(210, 14%, 89%, 0.7);
+        }
         @include flexSpaceBetween;
         img {
           max-width: 2.3rem;
