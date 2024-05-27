@@ -138,9 +138,11 @@
         .left {
           span.tag {
             margin: 0 auto;
+            text-align: center;
           }
           h3 {
             margin: 0 auto;
+            text-align: center;
           }
         }
       }
@@ -275,13 +277,27 @@
     .mySwiper {
       cursor: grab;
     }
-    .swiper-pagination {
-      position: relative;
-      max-width: 6.6rem;
-      margin: 0 auto;
-      margin-top: 4rem;
-      &-bullet-active {
-        background-color: $primary-orange;
+    // .swiper-pagination {
+    //   position: relative;
+    //   max-width: 6.6rem;
+    //   margin: 0 auto;
+    //   margin-top: 4rem;
+    //   &-bullet-active {
+    //     background-color: $primary-orange;
+    //   }
+    // }
+    .btns {
+      .btn {
+        &.swiper-button-disabled {
+          opacity: 0.4;
+          pointer-events: none;
+        }
+      }
+      margin-top: 3.2rem;
+      display: flex;
+      justify-content: center;
+      .btn.btn-prev-dep {
+        transform: rotate(180deg);
       }
     }
   }
