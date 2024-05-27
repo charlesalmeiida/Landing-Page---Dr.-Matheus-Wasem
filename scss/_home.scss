@@ -1,4 +1,5 @@
 .s-hero {
+  overflow: hidden;
   padding: 7.5rem 0 0;
   background: url(../assets/svg/bg-hero.svg) no-repeat center center;
   background-size: cover;
@@ -60,11 +61,17 @@
           }
         }
       }
+      .right {
+        img {
+          max-width: 30rem;
+        }
+      }
     }
   }
 }
 
 .s-video {
+  overflow: hidden;
   position: relative;
   top: -2.8rem;
   .container {
@@ -142,6 +149,7 @@
 }
 
 .s-sobre {
+  overflow: hidden;
   padding: 11.2rem 0;
   .container {
     @include flexTotalCenter;
@@ -168,9 +176,13 @@
       flex-direction: column;
     }
   }
+  @include responsivo('mobile'){
+    padding: 3.2rem 0;
+  }
 }
 
 .s-versus {
+  overflow: hidden;
   background-color: $gray-05;
   padding: 5.6rem 0 6.6rem;
   h2 {
@@ -241,7 +253,8 @@
           position: static;
           transform: rotate(0);
           text-align: center;
-          max-width: 42.8rem;
+          max-width: 24.8rem;
+          margin: 0 auto;
         }
         .items-versus {
           margin-bottom: 3.2rem;
@@ -252,6 +265,7 @@
 }
 
 .s-depoimentos {
+  overflow: hidden;
   padding: 11.2rem 0;
   .container {
     h2 {
@@ -271,9 +285,13 @@
       }
     }
   }
+  @include responsivo('mobile') {
+    padding: 3.2rem 0;
+  }
 }
 
 .s-entregaveis {
+  overflow: hidden;
   padding-bottom: 11.2rem;
   overflow: hidden;
   .top {
@@ -352,7 +370,7 @@
 }
 
 .s-bonus {
-  display: none;
+  overflow: hidden;
   padding-bottom: 11.2rem;
   .container {
     position: relative;
@@ -392,10 +410,54 @@
       }
     }
   }
+  .bonus-mobile {
+    display: none;
+  }
+  @include responsivo("laptop") {
+    .container {
+      display: none;
+    }
+    .bonus-mobile {
+      display: block;
+      span.tag {
+        text-align: center;
+      }
+      img {
+        max-width: 31.7rem;
+        margin: 0 auto;
+      }
+      .item-bonus {
+        display: flex;
+        justify-content: center;
+        span.tag {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 6.9568rem;
+          font-weight: 800;
+          line-height: 156.527px;
+          text-transform: uppercase;
+        }
+        .text {
+          margin-top: 4.1rem;
+          h3 {
+            color: $gray-01;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          p {
+            margin-top: 1.2rem;
+            max-width: 24.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-garantia {
-  padding-bottom: 11.2rem;
+  overflow: hidden;
+  padding: 11.2rem 0;
   .container {
     background-color: $primary-orange;
     border-radius: 1rem;
@@ -433,6 +495,7 @@
 }
 
 .s-faq {
+  overflow: hidden;
   padding-bottom: 11.2rem;
   .text {
     text-align: center;
