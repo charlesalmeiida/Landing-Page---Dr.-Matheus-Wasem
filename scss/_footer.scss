@@ -22,4 +22,15 @@ footer {
       text-decoration: underline;
     }
   }
+  @include responsivo('tablet') {
+    .container {
+      flex-direction: column;
+      gap: 4.0rem;
+      .right {
+        span {
+          text-align: center;
+        }
+      }
+    }
+  }
 }

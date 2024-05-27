@@ -33,6 +33,35 @@
       }
     }
   }
+  @include responsivo("tablet") {
+    padding: 7rem 0 0;
+    .container {
+      flex-direction: column;
+      .left {
+        text-align: center;
+        margin: 0 auto;
+        @include flex(column, center, center);
+        .logo {
+          margin-bottom: 2.4rem;
+        }
+      }
+      .right {
+        margin: 3.2rem auto 0;
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    .container {
+      .left {
+        .text {
+          p {
+            font-size: 2rem;
+            line-height: 3.2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-video {
@@ -78,6 +107,38 @@
       }
     }
   }
+  @include responsivo("laptop") {
+    .container {
+      .top {
+        flex-direction: column;
+        .left {
+          margin: 0 auto;
+        }
+        .right {
+          margin: 4rem auto 0;
+        }
+      }
+      .bottom {
+        iframe {
+          width: 90%;
+        }
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    .container {
+      .top {
+        .left {
+          span.tag {
+            margin: 0 auto;
+          }
+          h3 {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-sobre {
@@ -99,6 +160,12 @@
           }
         }
       }
+    }
+  }
+  @include responsivo("tablet") {
+    padding: 5.4rem 0;
+    .container {
+      flex-direction: column;
     }
   }
 }
@@ -147,6 +214,37 @@
           line-height: 130%;
           max-width: 36.625rem;
           width: 100%;
+        }
+      }
+    }
+  }
+  @include responsivo("laptop") {
+    .container {
+      flex-direction: column;
+      .left {
+        margin-top: 4rem;
+        span.tag {
+          text-align: center;
+          position: static;
+          transform: rotate(0);
+        }
+        .items-versus {
+          margin-top: 3.2rem;
+        }
+      }
+      .dots {
+        display: none;
+      }
+      .right {
+        margin-top: 4rem;
+        span.tag {
+          position: static;
+          transform: rotate(0);
+          text-align: center;
+          max-width: 42.8rem;
+        }
+        .items-versus {
+          margin-bottom: 3.2rem;
         }
       }
     }
@@ -230,9 +328,31 @@
       }
     }
   }
+  @include responsivo("tablet") {
+    .container {
+      .top {
+        flex-direction: column;
+        .left {
+          margin-bottom: 4rem;
+        }
+        .right {
+          .btns {
+            .btn {
+              width: 5.2rem;
+              height: 5.2rem;
+            }
+          }
+        }
+      }
+      .bottom {
+        margin-top: 5.6rem;
+      }
+    }
+  }
 }
 
 .s-bonus {
+  display: none;
   padding-bottom: 11.2rem;
   .container {
     position: relative;
@@ -275,7 +395,7 @@
 }
 
 .s-garantia {
-  padding: 11.2rem 0;
+  padding-bottom: 11.2rem;
   .container {
     background-color: $primary-orange;
     border-radius: 1rem;
@@ -299,6 +419,15 @@
     }
     a {
       margin: 52px auto 0;
+    }
+  }
+  @include responsivo("tablet") {
+    .container {
+      p {
+        font-size: 2rem;
+        padding: 0 1.6rem;
+        line-height: 3.2rem;
+      }
     }
   }
 }
@@ -350,6 +479,18 @@
         }
         img {
           transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  @include responsivo("tablet") {
+    .container {
+      .faq {
+        padding: 0 3.2rem;
+        .item-faq {
+          button {
+            max-width: 55.4rem;
+          }
         }
       }
     }

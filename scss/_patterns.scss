@@ -58,4 +58,7 @@ span.tag {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include responsivo('mobile') {
+    font-size: 4rem;
+  }
 }
