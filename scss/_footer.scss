@@ -34,4 +34,7 @@ footer {
       }
     }
   }
+  @include responsivo('mobile') {
+    padding-top: 3.2rem;
+  }
 }
